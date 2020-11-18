@@ -12,4 +12,9 @@ class CreateEventMutationResolverBridge extends AbstractCreateUpdateEventMutatio
     {
         return CreateEventMutationResolver::class;
     }
+
+    protected function isUpdate(): bool
+    {
+        return false;
+    }
 }
